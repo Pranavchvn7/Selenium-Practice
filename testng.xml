@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	
+	 <listeners>
+		<listener class-name="com.qa.utility.Listener"></listener>
+		<listener class-name="com.qa.utility.ExtentReportManager"></listener>
+	</listeners>
+	
+	<!-- parallel="methods" thread-count="3" -->
+	
+	<!-- Cross browser Testing -->
+  <test name="ChromeTest" > 
+	<parameter name = "Browser" value ="Chrome"/>
+    <classes>
+      <class name="com.qa.testLayer.DDTestCases"/>
+      <class name="com.qa.testLayer.TestCases"/>
+    </classes>
+  </test> <!-- Test -->
+  <!-- Firefox browser Testing -->
+  <test name="FirefoxTest"> 
+	<parameter name = "Browser" value ="Firefox"/>
+    <classes>
+      <class name="com.qa.testLayer.DDTestCases"/>
+      <class name="com.qa.testLayer.TestCases"/>
+    </classes>
+  </test > <!-- Test -->
+</suite> <!-- Suite -->

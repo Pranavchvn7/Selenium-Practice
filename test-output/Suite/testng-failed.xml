@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.qa.utility.Listener"/>
+    <listener class-name="com.qa.utility.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="Browser" value="Chrome"/>
+    <classes>
+      <class name="com.qa.testLayer.TestCases">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyBuyProcessOfNexus6"/>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.testLayer.TestCases -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" name="FirefoxTest(failed)">
+    <parameter name="Browser" value="Firefox"/>
+    <classes>
+      <class name="com.qa.testLayer.TestCases">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyBuyProcessOfNexus6"/>
+          <include name="end"/>
+          <include name="start"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.testLayer.TestCases -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-06T22:08:39 IST" name="Default suite" finished-at="2024-06-06T22:09:13 IST" duration-ms="34327">
+    <groups>
+    </groups>
+    <test started-at="2024-06-06T22:08:39 IST" name="Default test" finished-at="2024-06-06T22:09:13 IST" duration-ms="34327">
+      <class name="Selenium.All_Pactice.Amazon_in">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Selenium.All_Pactice.Amazon_in@6150c3ec]" started-at="2024-06-06T22:08:39 IST" name="setup" finished-at="2024-06-06T22:08:48 IST" duration-ms="8660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testLoginAndOrderHistory()[pri:3, instance:Selenium.All_Pactice.Amazon_in@6150c3ec]" started-at="2024-06-06T22:08:48 IST" name="testLoginAndOrderHistory" finished-at="2024-06-06T22:09:13 IST" duration-ms="25571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginAndOrderHistory -->
+      </class> <!-- Selenium.All_Pactice.Amazon_in -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
